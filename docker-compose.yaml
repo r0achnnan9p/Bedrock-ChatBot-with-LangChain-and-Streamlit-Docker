@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  chatbot:
+    container_name: bedrock-chatbot
+    image: bedrock-chatbot
+    restart: unless-stopped
+    env_file:
+      - .env_aws
+    ports:
+      - "8501:8501"
+    networks:
+      - caddy
+
+networks:
+  caddy:
+    external: true

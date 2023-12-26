@@ -11,3 +11,14 @@ https://github.com/davidshtian/Bedrock-ChatBot-with-LangChain-and-Streamlit/asse
 Streaming mode demo shown as below:
 
 https://github.com/davidshtian/Bedrock-ChatBot-with-LangChain-and-Streamlit/assets/14228056/cdff3813-fbfc-4b2f-83bc-b4016c921265
+
+
+
+## Configuration AWS credentials
+
+- Copy the `.env_aws.example` file to a new file named `.env_aws`.
+- Replace the placeholder values in `.env_aws` with your actual AWS credentials.
+- Note: Do not commit the `.env_aws` file to the repository. It is included in the `.gitignore` file to prevent sensitive information from being exposed.
+
+## Run
+docker compose up
